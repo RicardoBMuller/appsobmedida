@@ -1,59 +1,42 @@
 const header = document.getElementById("header");
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 const year = document.getElementById("year");
-const revealElements = document.querySelectorAll(".reveal");
+const cursorGlow = document.querySelector(".cursor-glow");
+const revealItems = document.querySelectorAll(".reveal");
 
 year.textContent = new Date().getFullYear();
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 40) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
+  header.classList.toggle("scrolled", window.scrollY > 30);
 });
 
-menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("active");
-  navMenu.classList.toggle("active");
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  navLinks.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav-menu a").forEach((link) => {
+document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
-    menuToggle.classList.remove("active");
-    navMenu.classList.remove("active");
+    menuBtn.classList.remove("active");
+    navLinks.classList.remove("active");
   });
 });
 
+window.addEventListener("mousemove", (event) => {
+  cursorGlow.style.left = `${event.clientX}px`;
+  cursorGlow.style.top = `${event.clientY}px`;
+});
+
 const revealOnScroll = () => {
-  const windowHeight = window.innerHeight;
+  revealItems.forEach((item) => {
+    const itemTop = item.getBoundingClientRect().top;
 
-  revealElements.forEach((element) => {
-    const elementTop = element.getBoundingClientRect().top;
-    const revealPoint = 120;
-
-    if (elementTop < windowHeight - revealPoint) {
-      element.classList.add("active");
+    if (itemTop < window.innerHeight - 110) {
+      item.classList.add("active");
     }
   });
 };
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
-
-document.querySelectorAll(".solution-card, .about-card, .contact-card, .timeline-item").forEach((card) => {
-  card.addEventListener("mousemove", (event) => {
-    const rect = card.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-
-    card.style.background = `
-      radial-gradient(circle at ${x}px ${y}px, rgba(24, 231, 255, 0.18), rgba(255,255,255,0.075) 38%)
-    `;
-  });
-
-  card.addEventListener("mouseleave", () => {
-    card.style.background = "";
-  });
-});
