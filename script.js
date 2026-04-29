@@ -2,7 +2,7 @@ const header = document.getElementById("header");
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 const year = document.getElementById("year");
-const cursorGlow = document.querySelector(".cursor-glow");
+const cursorGlow = document.getElementById("cursorGlow");
 const revealItems = document.querySelectorAll(".reveal");
 
 year.textContent = new Date().getFullYear();
@@ -24,6 +24,8 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 });
 
 window.addEventListener("mousemove", (event) => {
+  if (!cursorGlow) return;
+
   cursorGlow.style.left = `${event.clientX}px`;
   cursorGlow.style.top = `${event.clientY}px`;
 });

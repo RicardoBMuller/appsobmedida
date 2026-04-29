@@ -4,25 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>APPSOBMEDIDA | Tecnologia sob medida para negócios</title>
-  <meta name="description" content="Aplicativos sob medida, automações no WhatsApp e cardápios digitais para empresas modernas." />
+  <title>APPSOBMEDIDA | Tecnologia sob medida</title>
+
+  <meta
+    name="description"
+    content="Aplicativos sob medida, automações no WhatsApp e cardápios digitais para empresas modernas."
+  />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="cursor-glow"></div>
-  <div class="noise"></div>
+  <div class="page-bg"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
   <header class="header" id="header">
     <nav class="nav">
-      <a href="#" class="brand">
-        <img src="assets/logo.png" alt="APPSOBMEDIDA" />
+      <a href="#" class="brand" aria-label="APPSOBMEDIDA">
+        <img src="assets/logo.png" alt="Logo APPSOBMEDIDA" />
         <strong>APPS<span>OBMEDIDA</span></strong>
       </a>
 
       <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       <div class="nav-links" id="navLinks">
@@ -39,28 +45,29 @@
   <main>
     <section class="hero">
       <div class="hero-copy reveal">
-        <span class="eyebrow">Tecnologia leve, inteligente e sob medida</span>
+        <span class="eyebrow">Tecnologia sob medida para negócios</span>
 
         <h1>
-          Criamos soluções digitais que deixam seu negócio mais 
+          Soluções digitais que deixam seu negócio mais
           <span>moderno, rápido e vendável.</span>
         </h1>
 
         <p>
-          Aplicativos personalizados, automações no WhatsApp e cardápios digitais
-          com visual profissional, experiência simples e foco em resultado.
+          Criamos aplicativos personalizados, automações no WhatsApp e cardápios digitais
+          para empresas que querem vender mais, atender melhor e simplificar processos.
         </p>
 
         <div class="hero-actions">
-          <a href="#contato" class="btn primary">Começar meu projeto</a>
+          <a href="#contato" class="btn primary">Falar com especialista</a>
           <a href="#solucoes" class="btn ghost">Ver soluções</a>
         </div>
       </div>
 
       <div class="hero-logo reveal">
         <div class="logo-halo"></div>
+
         <div class="logo-card">
-          <img src="assets/logo.png" alt="Logo APPSOBMEDIDA com personagem" />
+          <img src="assets/logo.png" alt="Personagem APPSOBMEDIDA" />
         </div>
 
         <div class="mini-card code">&lt;/&gt;</div>
@@ -69,25 +76,137 @@
       </div>
     </section>
 
-    <section id="quem-somos" class="section about">
-      <div class="section-title reveal">
-        <span>Quem Somos</span>
-        <h2>Uma empresa de tecnologia com cara simples, moderna e humana.</h2>
-      </div>
+    <section id="quem-somos" class="about-showcase reveal">
+      <div class="about-showcase-content">
+        <div class="about-showcase-left">
+          <span class="pill-label">⚡ Quem Somos</span>
 
-      <div class="about-panel reveal">
-        <p>
-          A <strong>APPSOBMEDIDA</strong> desenvolve soluções digitais para empresas que
-          querem evoluir sem complicação. Unimos design, tecnologia e automação para
-          transformar atendimento, vendas e processos do dia a dia.
-        </p>
+          <h2>
+            Visual bonito, atendimento ágil e
+            <strong>tecnologia que funciona.</strong>
+          </h2>
+
+          <p>
+            A APPSOBMEDIDA une design moderno, automações inteligentes e soluções
+            sob medida para transformar o atendimento, as vendas e os processos
+            do seu negócio.
+          </p>
+
+          <div class="about-tags">
+            <div><i>🎨</i><span>Design moderno</span></div>
+            <div><i>🚀</i><span>Entrega prática</span></div>
+            <div><i>🎧</i><span>Suporte especializado</span></div>
+            <div><i>📈</i><span>Foco em resultado</span></div>
+          </div>
+        </div>
+
+        <div class="automation-stage">
+          <div class="bot-orbit"></div>
+
+          <div class="robot">
+            <div class="antenna"></div>
+            <div class="robot-head">
+              <div class="robot-eyes">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="robot-mouth"></div>
+            </div>
+            <div class="robot-body">
+              <span>&lt;/&gt;</span>
+            </div>
+          </div>
+
+          <div class="phone-demo">
+            <div class="phone-notch"></div>
+
+            <div class="phone-top">
+              <div class="wa-dot">💬</div>
+              <div>
+                <strong>Delivery Bot</strong>
+                <small>online agora</small>
+              </div>
+            </div>
+
+            <div class="chat-flow">
+              <div class="bubble customer b1">
+                Olá! Quero fazer um pedido 🍔
+              </div>
+
+              <div class="bubble bot b2">
+                Claro! Escolha uma opção:
+              </div>
+
+              <div class="menu-options b3">
+                <button>🍔 Combo Burger</button>
+                <button>🍟 Batata + Refri</button>
+              </div>
+
+              <div class="bubble customer b4">
+                Combo Burger, por favor.
+              </div>
+
+              <div class="order-card b5">
+                <div>
+                  <strong>Pedido #1024</strong>
+                  <small>Combo Burger + Refri</small>
+                </div>
+                <span>R$ 39,90</span>
+              </div>
+
+              <div class="bubble bot b6">
+                Pedido confirmado ✅<br />
+                Entrega estimada: 35 min.
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-food burger">🍔</div>
+          <div class="floating-food fries">🍟</div>
+          <div class="floating-food drink">🥤</div>
+          <div class="floating-food check">✅</div>
+        </div>
+
+        <div class="about-showcase-right">
+          <article>
+            <i>🧩</i>
+            <div>
+              <h3>Design moderno</h3>
+              <p>Interfaces bonitas e intuitivas que encantam seus clientes.</p>
+            </div>
+          </article>
+
+          <article>
+            <i>⚡</i>
+            <div>
+              <h3>Entrega prática</h3>
+              <p>Processos ágeis e transparentes do início ao fim.</p>
+            </div>
+          </article>
+
+          <article>
+            <i>🎧</i>
+            <div>
+              <h3>Suporte especializado</h3>
+              <p>Atendimento próximo, rápido e focado na sua necessidade.</p>
+            </div>
+          </article>
+
+          <article>
+            <i>🎯</i>
+            <div>
+              <h3>Foco em resultado</h3>
+              <p>Soluções pensadas para gerar mais vendas e eficiência.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="solucoes" class="section">
       <div class="section-title reveal">
         <span>Soluções e Produtos</span>
-        <h2>Escolha como vamos transformar seu negócio</h2>
+        <h2>O que podemos fazer por você</h2>
       </div>
 
       <div class="solutions">
@@ -96,19 +215,31 @@
             <span>01</span>
             <i>📱</i>
           </div>
+
           <h3>Aplicativos sob medida</h3>
-          <p>Aplicativos iOS e Android para comércios, serviços, pedidos, catálogo, agenda e relacionamento com clientes.</p>
-          <a href="#contato">Quero um aplicativo</a>
+
+          <p>
+            Aplicativos iOS e Android personalizados para seu comércio,
+            serviço, catálogo, pedidos ou agenda.
+          </p>
+
+          <a href="#contato">Quero um aplicativo →</a>
         </article>
 
-        <article class="solution reveal featured">
+        <article class="solution featured reveal">
           <div class="solution-top">
             <span>02</span>
             <i>💬</i>
           </div>
+
           <h3>Automações no WhatsApp</h3>
-          <p>Atendimento automático, agendamento, mensagens inteligentes e fluxos para reduzir tarefas manuais.</p>
-          <a href="#contato">Automatizar atendimento</a>
+
+          <p>
+            Atendimento automático, agendamentos, respostas inteligentes
+            e fluxos para reduzir tarefas manuais.
+          </p>
+
+          <a href="#contato">Automatizar atendimento →</a>
         </article>
 
         <article class="solution reveal">
@@ -116,55 +247,68 @@
             <span>03</span>
             <i>🍔</i>
           </div>
+
           <h3>Cardápios Digitais</h3>
-          <p>Cardápio via QR Code ou delivery para restaurantes, lanchonetes, bares e negócios alimentícios.</p>
-          <a href="#contato">Criar cardápio digital</a>
+
+          <p>
+            Cardápio via QR Code ou delivery para restaurantes, lanchonetes,
+            bares e negócios alimentícios.
+          </p>
+
+          <a href="#contato">Criar cardápio digital →</a>
         </article>
       </div>
     </section>
 
-    <section class="experience reveal">
-      <div>
-        <span>Experiência APPSOBMEDIDA</span>
-        <h2>Visual bonito, atendimento ágil e tecnologia que funciona.</h2>
-      </div>
-
-      <div class="experience-grid">
-        <div>Design moderno</div>
-        <div>Entrega prática</div>
-        <div>Suporte especializado</div>
-        <div>Foco em resultado</div>
-      </div>
-    </section>
-
-    <section id="contato" class="section contact">
-      <div class="section-title reveal">
+    <section id="contato" class="section contact-new">
+      <div class="contact-heading reveal">
         <span>Contato</span>
-        <h2>Vamos conversar?</h2>
+        <h2>Vamos <strong>conversar?</strong></h2>
+        <p>Escolha o melhor canal para falar com a nossa equipe.</p>
       </div>
 
-      <div class="contact-grid">
-        <a href="https://wa.me/5511947027581" target="_blank" class="contact-card reveal">
-          <b>WhatsApp</b>
-          <small>Fale conosco agora</small>
+      <div class="contact-new-grid">
+        <a href="https://wa.me/5500000000000" target="_blank" class="contact-new-card whatsapp-card reveal">
+          <div class="contact-icon">💬</div>
+
+          <div>
+            <small>Mais rápido ⚡</small>
+            <h3>WhatsApp</h3>
+            <p>Fale conosco agora e tire suas dúvidas.</p>
+            <span>Abrir conversa →</span>
+          </div>
         </a>
 
-        <a href="mailto:contato@appsobmedida.com.br" class="contact-card reveal">
-          <b>E-mail</b>
-          <small>contato@appsobmedida.com.br</small>
+        <a href="mailto:contato@appsobmedida.com.br" class="contact-new-card email-card reveal">
+          <div class="contact-icon">✉️</div>
+
+          <div>
+            <small>Mensagem direta</small>
+            <h3>E-mail</h3>
+            <p>Envie sua mensagem e responderemos em breve.</p>
+            <span>Enviar e-mail →</span>
+          </div>
         </a>
 
-        <a href="https://seu-link-do-portal.com" target="_blank" class="contact-card reveal">
-          <b>Portal do Cliente</b>
-          <small>Acesse sua área exclusiva</small>
+        <a href="https://seu-link-do-portal.com" target="_blank" class="contact-new-card portal-card reveal">
+          <div class="contact-icon">👤</div>
+
+          <div>
+            <small>Área exclusiva</small>
+            <h3>Portal do Cliente</h3>
+            <p>Acesse sua área exclusiva e acompanhe tudo.</p>
+            <span>Acessar portal →</span>
+          </div>
         </a>
       </div>
     </section>
   </main>
 
-  <a href="https://wa.me/5511947027581" target="_blank" class="float-whatsapp">💬</a>
+  <a href="https://wa.me/5500000000000" target="_blank" class="float-whatsapp" aria-label="WhatsApp">
+    💬
+  </a>
 
-  <footer>
+  <footer class="footer">
     © <span id="year"></span> APPSOBMEDIDA — Tecnologia que transforma negócios.
   </footer>
 
